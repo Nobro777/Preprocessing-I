@@ -20,9 +20,12 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
+	font-family: 'Varela Round', sans-serif;
 	vertical-align: baseline;
+	max-width: 100%;
+	max-height: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -48,12 +51,95 @@ table {
 	border-spacing: 0;
 }
 
+/* VARIABLES!! */
+
+@para-border: 1.5px solid black;
+@heading-font: 3rem;
+@h2-font: 1.7rem;
+@h3-font: 1.2rem;
+@phone: ~'(max-width: 500px)';
+
+
+/* MIX-INS! */
+
+.centerplease {
+	display: flex;
+	justify-content: center;
+}
+.paddingplease {
+	padding: 10px;
+}
+.marginplease {
+	margin: 30px;
+}
+
 /* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: lightgrey;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	.paddingplease;
+	.marginplease;
 }
-
+nav {
+	.paddingplease;
+	display: flex;
+	justify-content: space-between;
+		a {
+			color: white;
+			font-weight: bold;
+			opacity: .5;
+				@media (Max-width:500px){
+				color: black;
+				}
+}
+}
+h1 {
+	font-size: @heading-font;
+	.centerplease;
+	.paddingplease;
+	font-weight: bold;
+	padding-bottom: 50px;
+	padding-top: 40px;
+	letter-spacing: .2rem;
+}
+h2 {
+	font-size: @h2-font;
+	.paddingplease;
+	font-weight: bold;
+	.centerplease;
+	text-decoration: underline;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	letter-spacing: .2rem;
+}
+h3 {
+	.centerplease;
+	font-size: @h3-font;
+	.paddingplease;
+	font-weight: bold;
+	padding-top: 20px;
+} 
+p {
+	border: @para-border;
+	border-radius: .2rem;
+	.paddingplease;
+	.centerplease;
+	background-color: white;
+}
+.centerthis {
+	@media(max-width: 516px){
+		position: relative;
+		left: 45px;
+	}
+}
+footer {
+	padding: 20px;
+}
+.historyportion {
+	border-top: 1px solid black;
+}

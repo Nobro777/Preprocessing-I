@@ -4,16 +4,85 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>My Resume</title>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <!--  
+  
+  Content: Navigation - Build a simple navigation with 4 items of your choosing
+ **Content: Intro - Have a short introduction as to why you would be a good hire
+ **Content: Skills - Showcase a list of skills you have somewhere on your resume
+ **Content: Work History - Showcase your work history somewhere on your resume
+ **Content: Contact - Provide some way a potential employer could contact you. Phone number, email, or a full on contact form (doesn't have to work)
+ **Variables: Incorporate variables in your project for color and font stacks.
+ **Nesting: Every selector should be nested inside the main container. Avoid having global styles unless they are element level.
+ **Mixins: Create 2 mixins of your choosing. Hint: It's super helpful to use flexbox properties in mixins
+ Mobile: Use nested-at rules to provide a mobile version of your resume. Use 500px as a max-width for mobile. -->
 </head>
-
 <body>
+
+  <nav>
+    <A HREF="#About">About</A><br>
+    <A HREF="#Skills">Skills</A><br>
+    <A HREF="#Work History">Work History</A><br>
+    <A HREF="#Contact">Contact</A><br>
+  </nav>
+  <a name="About">
   <h1>My Resume</h1>
+    <p>
+      I would be a good hire because i've been a web dev student for almost 2 weeks and i AM A PRO!
+    </p>
+    <a name="Skills">
+  <h2>Skills</h2>
+
+    <section>
+      <h3>HTML Expert</h3>
+    <p>
+talk about my HTML SKILL "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+  </section>
+  <section>
+    <h3>CSS Guru</h3>
+    <p>
+explain why i a m a css guru "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+  </section>
+  <section>
+    <h3>Javascript Prodige</h3>
+    <p>
+explain more about JS "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+  </section>
+  <div>
+    <section class="historyportion">
+        <a name="Work History">
+      <h2>Work History</h2>
+        <p>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+    </section>
+  </div>
+  <div>
+      <a name="Contact">
+    <h2 class="centerthis">Contact Information</h2>
+      <p>
+Email: Brandon.fulmer@outlook.com<br>
+(You should recieve a response within 2 business days.)
+      </p>
+  </div>
+  <footer>
+    <nav>
+        <A HREF="#About">About</A><br>
+        <A HREF="#Skills">Skills</A><br>
+        <A HREF="#Work History">Work History</A><br>
+        <A HREF="#Contact">Contact</A><br>
+    </nav>
+  </footer>
 </body>
 </html>
